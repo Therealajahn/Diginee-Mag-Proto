@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:green;
+    display:grid;
+    align-items: center;
+}
+.page{
+   align-self: center ;
+}
+img{position: absolute;
+   ;}
+
+
+/* FOREGROUND STUFF */
+
+.robots{
+  z-index: 100;  
+}
+
+.under-text{
+    z-index: 80;  
+  }
+
+.adding-white{
+    z-index: 60;  
+  }
+
+.under-drawing{
+    z-index: 50;  
+  }
+.leaf{
+    z-index: 45;
+}
+.back{
+    z-index: 40;  
+}
+/* TEXT STUFF */
+.page-one-text{
+    position: relative;
+    color: white;
+    font-family: 'PT Serif', serif;
+    z-index: 150;
+    margin-left: 100px;
+    margin-top: 120px;
+}
+
+.top{
+    height: 100px;
+    display: grid;
+    grid-template-columns: 8% 82%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+        'w line1'
+        'w line2'
+    ;
+    gap:10px;
+}
+.super-letter{
+    grid-area: w;
+    font-size: 80px;
+    margin-top: 15px;
+}
+.body{
+    margin-left: 1.4vw;
+    font-weight: 550;
+    font-size: 17px
+}
+.line-1{
+    grid-area: line1;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.line-2{
+    grid-area: line2;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+
+
